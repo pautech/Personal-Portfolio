@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 6.5rem;
+    top: 0;
+    width: 100%;
+    background-color: #BE3144;
+    position: fixed;
+    
+}
+nav{
+    float: right;
+    width: 40%;
+    height: 6.5rem;
+   
+}
+nav ul{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+header,nav ul li{
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+header,nav ul li a{
+    text-decoration: none;
+    color: #d0cbcc;
+}
+#welcome-section{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/pexels-sharad-bhat-4007744.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    color: rgb(25, 219, 196);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+    
+
+    
+}
+h3{
+    font-size: 2rem;
+    color: rgb(68, 196, 234);
+}
+#projects{
+    background-color: #202125;
+}
+#welcome-section h1{
+   
+    margin-top: 2rem;
+    font-size: 7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.projects-container{
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+}
+#projects h2{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #d0cbcc;
+}
+.project{
+    height: 18.5rem;
+    width: 27rem;
+    
+}
+#project-1{
+    background-image: url(/img/ahon_home_page.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#project-2{
+    background-image: url(/img/Fourth\ Design.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#project-3{
+    background-image: url(/img/third_design.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#project-4{
+    background-image: url(/img/received_150048249792690.jpeg);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#project-5{
+    background-image: url(/img/5.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#project-6{
+    background-image: url(/img/6.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+footer{
+    height: 3rem;
+    width: 100%;
+    background-color: #4ed3bf;
+    
+}
+footer h4{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 5rem;
+}
+@media screen and (max-width:1400px){
+    nav{
+      
+        width: 100%;
+        height: 6.5rem;
+       
+    }
+    #welcome-section h1{
+   
+        margin-top: 2rem;
+        font-size: 4rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .projects-container{
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:900px){
+    .projects-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
